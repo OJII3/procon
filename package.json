@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/OJII3/atcoder#readme",
   "volta": {
-    "node": "14.21.3"
+    "node": "18.15.0"
   }
 }

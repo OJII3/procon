@@ -4,6 +4,6 @@ for i in ${array[@]}
 do
     cat $i
     echo '>>'
-    pypy3 main.py < $i
+    pypy3 $(echo "$PWD")/main.py < $i
     echo ''
 done
