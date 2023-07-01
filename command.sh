@@ -1,9 +1,11 @@
 array=($(find . -path '*.in'))
 
+g++ main.cpp
+
 for i in ${array[@]}
 do
     cat $i
     echo '>>'
-    pypy3 $(echo "$PWD")/main.py < $i
+    ./a.out < $i
     echo ''
 done
