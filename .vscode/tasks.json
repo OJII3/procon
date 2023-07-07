@@ -1,5 +1,0 @@
-{
-  "name": "Python: Current File (External Terminal)",
-  "type": "shell",
-  "command": "cd ${fileDirname} && acc s main.py --guess-python-interpreter pypy",
-}
