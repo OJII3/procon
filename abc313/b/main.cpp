@@ -25,14 +25,14 @@ int main() {
 
   for (int i = 1; i < n + 1; ++i) {
     vector<bool> seen;
-    seen.assign(n, false);
+    seen.assign(n + 1, false);
     dfs(dfs, seen, i);
     int sum = 0;
     for (int _seen : seen) {
       sum += _seen;
     }
     /* cout << i << ": " << sum << endl; */
-    if (sum == n - 1) {
+    if (sum == n) {
       cout << i << endl;
       return 0;
     }
