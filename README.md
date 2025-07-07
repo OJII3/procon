@@ -1,7 +1,7 @@
-# atcoder
+# procon
 
+## Setup
 
-## Prerequisites
-
-- `online-judge-tools`
-
+```sh
+direnv allow
+```
