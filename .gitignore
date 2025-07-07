@@ -1,3 +1,6 @@
 .venv
 a.out
 __pycache__
+
+/.direnv
+/.claude
