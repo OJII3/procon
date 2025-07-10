@@ -16,12 +16,13 @@
           # When execute `nix develop`, you go in shell installed nil.
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
+              gcc14
               online-judge-tools
               (clang-tools.overrideAttrs (old: {
                 enableLibcxx = true;
                 postPatch = ''
                   # Create bits directory and stdc++.h for competitive programming
-                  mkdir -p $out/include/bits
+                  mkdir -p $out/include/bits/
                   cat > $out/include/bits/stdc++.h << 'EOF'
                   #pragma once
 
