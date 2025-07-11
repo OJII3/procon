@@ -17,7 +17,7 @@
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
               gcc14
-              online-judge-tools
+              python312Packages.online-judge-tools
               (clang-tools.overrideAttrs (old: {
                 enableLibcxx = true;
                 postPatch = ''
